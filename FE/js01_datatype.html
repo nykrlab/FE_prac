@@ -1,0 +1,43 @@
+<!--html 주석-->
+<!--
+자바스크립트 기본 데이터 타입 - 변수 타입으로 제공됨
+number
+string
+boolean
+함수형
+객체형
+undefined
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+    
+<head>
+    <script>
+        var variable;
+        var stringVar = "String"; <!--동적할당 _ stringVar은 string으로 결정된다-->
+        var numVar = 123;
+        var booleanVar = true; <!--JS나 Java는 boolean값 다 소문자로 들어감-->
+        var functionVar = function (){} <!--익명함수 ananymous--> /*익명함수 > 변수명 functionVar라고 불림*/
+        var objectVar = {}; /*빈껍데기 객체 ~ dictionary처럼 보이지만 아님. object 맞아요! JSON이야*/
+        
+        alert(variable); /*undefined*/
+        alert(stringVar);
+        alert(numVar);
+        alert(booleanVar);
+        alert(objectVar); /*[object Object]*/ 
+        /*alert :: 팝업처럼 뜸!*/
+        
+        alert(typeof variable); /*undefined*/
+        alert(typeof stringVar);
+        alert(typeof numVar);
+        alert(typeof booleanVar);
+        alert(typeof objectVar); /*[object Object]*/ 
+        
+        alert(typeof alpha);
+    </script>
+</head>
+    
+</body>
+</html>
