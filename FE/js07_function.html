@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<script>
+    function calc(x,y){
+        return x*y;
+    }
+    console.log(calc(5,3));   // 8 << 마지막 calc로 overriding 된 후 실행되므로
+    
+    function calc(x,y){
+        return x+y;
+    }
+    console.log(calc(5,3));
+</script>
+    
+</head>
+
+<body>
+</body>
+    
+</html>
+
+
