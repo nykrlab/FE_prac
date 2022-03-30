@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script>
+        window.onload = function (){// 함수 객체 여기에 할당 
+        // 1. 복합연산자
+        var list = ''
+        list += '<ul>';
+        list += '<li>Hello</li>';
+        list += '<li>JavaScript!!</li>';
+        list += '</ul>';
+        
+        // 2. 화면에 출력하는 기능 - innerHTML
+        document.body.innerHTML = list; // body에 list에 있는 내용이 뿌려지는 것
+        // document : HTML 만들게 되면 어디서 interperting 되는 language? - 브라우저에서 해석됨 / 브라우저 메모리에서 
+        }               
+    </script>
+</head>
+    
+<body>
+    <h2> ==== on load ==== </h2>
+</body>
+    
+    
+</html>
