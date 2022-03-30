@@ -1,0 +1,45 @@
+<!--
+함수 선언하는 2가지 방법
+1) 익명함수 선언 2) 선언적함수 선언 
+-->
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script>
+    	//func();  //- alert 출력되지 않음(익명함수) > 뒤에서 호출해야 
+        	       // - alert 출력 (선언함수)
+        var func = function(){  //익명함수
+            alert("func A");
+        }
+        
+        // 1. 익명함수 재정의 Overriding - 선언부는 같고, 구현부{}만 달라짐 : B
+        var func = function(){  //재정의
+            alert("func B");
+        }
+        
+        /*
+        //2. 선언적 함수선언 재정의 : B
+        function func(){alert('func A');}
+        function func(){alert('func B');}  //구현부 overriding
+        // 선언적 함수선언 - 먼저 올림 ) 호출하는 부분이 맨 위에 있어도 호출 가능
+        */
+        //func();  // 호출되는 시점에는 안올라감 / 익명함수는 먼저 호출하면 안됨 / 나중에 올라가요 / 호출 부분이 밑에 있어야 함
+        
+        /*
+        //3. 익명함수 + 선언적함수 정의 : A
+        var func = function(){alert('func A');}  // 익명함수 - 후에 만들어짐 - (overriding)
+        function func(){alert('func B');}        // 선언함수 - 먼저 만들어짐 ) 메모리에 먼저 올라감
+        */
+        func();  // func A 출력 
+        
+        
+    </script>
+</head>
+    
+<body>
+</body>
+</html>
+
+
